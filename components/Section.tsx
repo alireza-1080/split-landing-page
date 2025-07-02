@@ -47,6 +47,7 @@ const Section = ({ image, horizontalPosition, alt, setSelectedSection, selectedS
   };
 
   useGSAP(() => {
+    tl.current.clear()
     if (selectedSection === "none") {
       tl.current
       .to(section.current, { width: "50%" })
